@@ -1,0 +1,50 @@
+.custom-card {
+    border-radius: 12px;
+    background-color: #f8f9fa;
+    position: relative;
+    overflow: hidden;
+}
+
+.custom-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100%;
+    background-color: #91029d;
+    clip-path: polygon(0 0, 100% 0, 70% 100%, 0% 100%);
+}
+
+.icon-circle {
+    width: 75px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    z-index: 1;
+    background-color: #0b49a9;
+}
+
+.icon-circle i {
+    color: #f8f9fa;
+    z-index: 1;
+}
+
+.m-card h5 {
+    z-index: 99;
+    background: #fff;
+    color: #0b49a9;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.card h6 {
+    color: #343a40;
+}
+
+.form-check-label {
+    font-weight: bold;
+    margin-left: 0.5rem;
+}

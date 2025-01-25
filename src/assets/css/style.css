@@ -55468,7 +55468,7 @@ input[type=file]::file-selector-button {
 }
 
 .dataTables_wrapper {
-  scrollbar-color: #2c2c2c #fff;
+  scrollbar-color: #040404fa #fff;
 }
 
 .dataTables_wrapper:hover {

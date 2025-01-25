@@ -4,7 +4,7 @@ import "./assets/css/style.css";
 // import "./components/upgrade-member/member.css"
 import "react-toastify/dist/ReactToastify.css";
 
-// import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 // import "./assets/css/style.css";
 import "./common/CustomInputField/index.module.scss";
 import "./assets/css/project.css"
@@ -23,6 +23,7 @@ import PrivateRoute from "./privateRote/PrivateRoute";
 import DasBoardRight from "./pages/dasBoardRight/DasBoardRight";
 import DashboardLeadPage from "./pages/Dashboard-Lead/Index";
 import PageNotFound from "./common/pageNotFound/PageNotFound";
+import SettingsPages from "./pages/settings";
 
 
 function App() {
@@ -113,6 +114,7 @@ function App() {
               {/* <Route path={`${location?.pathname}`} element={<DasBoardRight />} /> */}
               <Route path={`contest_dashboard`} element={<DasBoardRight />} />
               <Route path={`lead_dashboard`} element={<DashboardLeadPage />} />
+              <Route path={`store-manager/settings`} element={<SettingsPages />} />
               <Route path="*" element={<PageNotFound />} />
             </Route>
           </>
